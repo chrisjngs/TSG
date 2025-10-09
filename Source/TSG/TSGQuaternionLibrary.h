@@ -42,4 +42,8 @@ public:
     // Function to add delta rotation to current local rotation of Actor
     UFUNCTION(BlueprintCallable, meta = (DisplayName = "Add Actor Local Rotation (Quaternion)", Keywords = "rotation, quaternion"), Category = "Quaternion Rotation")
     static void AddActorLocalRotationQuat(AActor* Actor, const FQuat& Delta_Rotation);
+
+    // Function to add delta rotation to current local rotation of Actor
+    UFUNCTION(BlueprintCallable, meta = (DisplayName = "Slerp Actor Local Rotation (Quaternion)", Keywords = "rotation, quaternion"), Category = "Quaternion Rotation")
+    static void SlerpActorLocalRotationQuat(AActor* Actor, const FQuat& Target_Quat);
 };

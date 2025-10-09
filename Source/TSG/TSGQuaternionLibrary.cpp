@@ -79,3 +79,10 @@ void UTSGQuaternionLibrary::AddActorLocalRotationQuat(AActor* Actor, const FQuat
         Actor->AddActorLocalRotation(Delta_Rotation);
     }
 }
+void UTSGQuaternionLibrary::SlerpActorLocalRotationQuat(AActor* Actor, const FQuat& Target_Quat)
+{
+    if (Actor)
+    {
+        Actor->AddActorLocalRotation(Target_Quat);
+    }
+}
