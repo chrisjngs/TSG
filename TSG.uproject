@@ -61,6 +61,10 @@
 		{
 			"Name": "JsonBlueprintUtilities",
 			"Enabled": true
+		},
+		{
+			"Name": "Mutable",
+			"Enabled": true
 		}
 	]
 }
